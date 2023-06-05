@@ -13,3 +13,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 4px;
+  outline: none;
+  transition: transform 250ms linear;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    background-color: teal;
+  }
+}
