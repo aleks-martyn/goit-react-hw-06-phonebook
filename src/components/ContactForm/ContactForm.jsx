@@ -21,6 +21,15 @@ export const ContactForm = () => {
       number: form.elements.number.value,
     };
 
+    if (
+      contacts.find(
+        ({ name }) => name.toLowerCase() === contact.name.toLowerCase()
+      )
+    ) {
+      alert(`${contact.name} is already in contacts`);
+      return;
+    }
+
     dispatch(addContact(contact));
     form.reset();
   };
