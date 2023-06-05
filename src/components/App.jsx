@@ -1,5 +1,10 @@
 import { Container } from './App.styled';
 
 export const App = () => {
-  return <Container></Container>;
+  return (
+    <Container>
+      <h1>Phonebook</h1>
+      <h2>Contacts</h2>
+    </Container>
+  );
 };
