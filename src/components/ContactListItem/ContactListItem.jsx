@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contactsSlice';
 import { Item, Text, Marker } from './ContactListItem.styled';
@@ -18,4 +19,10 @@ export const ContactListItem = ({ id, name, number }) => {
       </button>
     </Item>
   );
+};
+
+ContactListItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
 };
